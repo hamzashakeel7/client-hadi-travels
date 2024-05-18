@@ -1,0 +1,148 @@
+:root {
+  --blue-color: #29d9d5;
+  --black-color: #111;
+  --white-color: #fff;
+  --light-color: #aaa;
+  --bg-color: #222;
+  --black-bg: rgba(17, 17, 17, 0.7);
+  --border: 0.2rem solid #29d9d5;
+}
+
+.partners {
+  transform: translateY(25rem);
+  margin-bottom: 30rem;
+}
+
+.partners .heading {
+  margin: 5rem 0;
+}
+
+.partners .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.partners .image img,
+.regestration .image img {
+  width: 12rem;
+  margin-top: 3rem;
+  /* margin-bottom: -10rem; */
+}
+
+.regestration .box-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.regestration .image:hover {
+  transform: scale(1.1);
+  /* border: var(--border); */
+}
+
+/* ----------------------------------------------------------Bank details------------------------------------- */
+
+.bank-details .box-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 5rem;
+}
+
+.bank-details .box-container .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10rem; */
+  width: 60rem;
+  height: 32rem;
+  border: var(--border);
+  margin-top: 5rem;
+  background-color: #222222;
+  transition: all ease-in-out 0.3s;
+}
+.bank-details .box-container .box:hover {
+  transform: scale(1.05);
+}
+.bank-details .box-container .box .image {
+  display: grid;
+  place-items: center;
+  margin-left: 5rem;
+  border: 0.8rem solid #29d9d5;
+  width: 15rem;
+  z-index: 2;
+  /* height: 15rem; */
+  border-radius: 50%;
+}
+.bank-details .box-container .box .image img {
+  width: 14rem;
+  border-radius: 60%;
+}
+.bank-details .content {
+  margin-top: 5rem;
+}
+.bank-details .content h3 {
+  color: var(--white-color);
+  font-size: 2.5rem !important;
+  margin-top: 0.5rem;
+}
+.bank-details .content p {
+  line-height: 1.5 !important;
+  font-size: 1.5rem !important;
+}
+
+/* ----------------------------------------------------------Breakpoints------------------------------------- */
+
+@media (max-width: 768px) {
+  .partners .box-container {
+    gap: 2rem;
+  }
+
+  .regestration .box-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .bank-details .box-container .box {
+    width: 47rem;
+    height: 35rem;
+  }
+
+  .bank-details .box-container .box .image {
+    width: 15rem;
+    margin-left: 5rem;
+  }
+
+  .bank-details .box-container .box .image img {
+    width: 10rem;
+    border-radius: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  .regestration .box-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bank-details .box-container .box {
+    width: 40rem;
+    height: 35rem;
+  }
+
+  .bank-details .box-container .box .image {
+    border-radius: 50%;
+    width: 15rem;
+    margin-left: 2rem;
+  }
+
+  .bank-details .box-container .box .image img {
+    width: 12rem;
+    border-radius: 50%;
+  }
+
+  .partners {
+    transform: translateY(15rem);
+    /* margin-bottom: 30rem; */
+  }
+}

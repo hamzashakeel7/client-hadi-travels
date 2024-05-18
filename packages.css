@@ -1,0 +1,193 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.heading {
+  margin-top: 25rem;
+}
+
+#menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+#menu3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+#menu2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.button {
+  border-radius: 1rem;
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+.packagesBox {
+  border-radius: 1rem;
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+.packagesBox:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.packagesBox .image {
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+.packagesBox .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.packagesBox .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.packagesBox .content h2 {
+  color: var(--white-color);
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.packagesBox .content p {
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 2;
+  line-break: auto;
+  height: 10rem;
+}
+
+.packagesBox .content h4 {
+  font-size: 1.7rem;
+  color: var(--blue-color);
+}
+
+.package-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.package-details .package-name h2 {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.package-details .package-price h4 {
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+.btn-package {
+  background: transparent;
+  cursor: pointer;
+}
+
+.multiline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
+
+.multiline-ellipsis-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 2nd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
+
+.multiline-ellipsis-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 1st line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
+
+/* Breakpoints */
+
+@media (max-width: 768px) {
+  #menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  #menu2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  #menu3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+/* small screen */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  #menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    place-items: center;
+    /* width: 100%; */
+  }
+  #menu2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+  #menu3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
